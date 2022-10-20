@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 // import { logo } from '../utiliti/constan'
 import SearchBar from './SearchBar'
 import MovieCreationIcon from '@mui/icons-material/MovieCreation';
-import { Box } from '@mui/system';
 
 
 const Navbar = () => {
@@ -16,9 +15,9 @@ const Navbar = () => {
       sx={{ position: 'sticky', background: '#000', top: 0, justifyContent: 'space-between'}}
     >
       <Link to="/" style={{ display: 'flex', alignItems: 'center'}}>
-        <MovieCreationIcon sx={{ fontSize: "70px", color: "red", ml: "40px" }} />
+        <MovieCreationIcon sx={{ fontSize: "70px", color: "red", ml: "30px" }} />
         
-          <Typography variant="h5" color="white" ml="-35px">
+          <Typography variant="h6" color="white" ml="-35px" sx={{fontWeight: 'bold'}}>
             Kamu
           </Typography>
           <Typography variant="h5" color="red">
